@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link, Switch, Route, } from 'react-router-dom';
-import Home from '../../pages/Home';
+import { Link } from 'react-router-dom';
+
 
 const Wrapper = styled.div`
+
 width:705px;
 height:733px;
 background-color:white;
@@ -35,7 +36,7 @@ height:90px;
 margin-top: 10px;
 `;
 
-const Login = () => {
+const LoginCard = () => {
   return (
     <Wrapper>
       <Title>
@@ -43,10 +44,10 @@ const Login = () => {
       </Title>
       <Input placeholder="Email" />
       <Input placeholder="Senha" />
-      <Link to="/">
+      <Link to="/Home">
       <Butao>Entrar</Butao>
       </Link>
-      <Link to="ForgotPassword">
+      <Link to="Forgot">
       <ButtonF>Esqueci minha senha</ButtonF>
       </Link>
 
@@ -55,4 +56,4 @@ const Login = () => {
   )
 }
 
-export default Login;
+export default LoginCard;
